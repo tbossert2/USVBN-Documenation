@@ -1,0 +1,1051 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>veteransbenefits-client documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">veteransbenefits-client documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  EligibilityStepComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-eligibility-step</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./eligibility-step.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./eligibility-step.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#branches" >branches</a>
+                            </li>
+                            <li>
+                                <a href="#filteredRanks" >filteredRanks</a>
+                            </li>
+                            <li>
+                                <a href="#rankCategories" >rankCategories</a>
+                            </li>
+                            <li>
+                                <a href="#serviceDetailsForm" >serviceDetailsForm</a>
+                            </li>
+                            <li>
+                                <a href="#serviceTypes" >serviceTypes</a>
+                            </li>
+                            <li>
+                                <a href="#showRankCategory" >showRankCategory</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#moveToNextStep" >moveToNextStep</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onBranchSelect" >onBranchSelect</a>
+                            </li>
+                            <li>
+                                <a href="#onRankCategorySelect" >onRankCategorySelect</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: FormBuilder, wizardState: <a href="../injectables/GuidedWizardService.html" target="_self">GuidedWizardService</a>, rankService: <a href="../injectables/RankService.html" target="_self">RankService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                    <code>FormBuilder</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>wizardState</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GuidedWizardService.html" target="_self" >GuidedWizardService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>rankService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RankService.html" target="_self" >RankService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="moveToNextStep"></a>
+                    <span class="name">
+                        <span ><b>moveToNextStep</b></span>
+                        <a href="#moveToNextStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>moveToNextStep()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="56"
+                                    class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="39"
+                                    class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onBranchSelect"></a>
+                    <span class="name">
+                        <span ><b>onBranchSelect</b></span>
+                        <a href="#onBranchSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onBranchSelect(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="41"
+                                    class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>event</td>
+                                            <td>
+                                                            <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onRankCategorySelect"></a>
+                    <span class="name">
+                        <span ><b>onRankCategorySelect</b></span>
+                        <a href="#onRankCategorySelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onRankCategorySelect(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="48"
+                                    class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>event</td>
+                                            <td>
+                                                            <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="branches"></a>
+                    <span class="name">
+                        <span ><b>branches</b></span>
+                        <a href="#branches"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filteredRanks"></a>
+                    <span class="name">
+                        <span ><b>filteredRanks</b></span>
+                        <a href="#filteredRanks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rankCategories"></a>
+                    <span class="name">
+                        <span ><b>rankCategories</b></span>
+                        <a href="#rankCategories"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="serviceDetailsForm"></a>
+                    <span class="name">
+                        <span ><b>serviceDetailsForm</b></span>
+                        <a href="#serviceDetailsForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>FormGroup</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="serviceTypes"></a>
+                    <span class="name">
+                        <span ><b>serviceTypes</b></span>
+                        <a href="#serviceTypes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&#x27;Active&#x27;, &#x27;Guard&#x27;, &#x27;Reserve&#x27;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showRankCategory"></a>
+                    <span class="name">
+                        <span ><b>showRankCategory</b></span>
+                        <a href="#showRankCategory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/guided-wizard/steps/service-details-step/eligibility-step.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { GuidedWizardService } from &#x27;../../shared/guided-wizard.service&#x27;;
+import { RankService } from &#x27;../../shared/rank.service&#x27;;
+
+@Component({
+  selector: &#x27;app-eligibility-step&#x27;,
+  templateUrl: &#x27;./eligibility-step.component.html&#x27;,
+  styleUrls: [&#x27;./eligibility-step.component.scss&#x27;],
+})
+export class EligibilityStepComponent implements OnInit {
+  serviceDetailsForm: FormGroup;
+  branches: string[] &#x3D; [];
+  rankCategories: string[] &#x3D; [];
+  filteredRanks: string[] &#x3D; [];
+  serviceTypes: string[] &#x3D; [&#x27;Active&#x27;, &#x27;Guard&#x27;, &#x27;Reserve&#x27;]; // Service types
+  showRankCategory: boolean &#x3D; false;
+
+  constructor(
+    private fb: FormBuilder,
+    private wizardState: GuidedWizardService,
+    private rankService: RankService
+  ) {
+    this.serviceDetailsForm &#x3D; this.fb.group({
+      yearsOfService: [
+        &#x27;&#x27;,
+        [Validators.required, Validators.pattern(/^\d+(\.\d{1,2})?$/)],
+      ],
+      branch: [&#x27;&#x27;, Validators.required],
+      serviceType: [&#x27;&#x27;, Validators.required],
+      rankCategory: [&#x27;&#x27;],
+      dischargeRank: [&#x27;&#x27;],
+    });
+
+    this.branches &#x3D; this.rankService.getBranches();
+    this.rankCategories &#x3D; this.rankService.getRankCategories();
+  }
+
+  ngOnInit() {}
+
+  onBranchSelect(event: any) {
+    const branch &#x3D; event.value;
+    this.showRankCategory &#x3D; this.rankService.hasBranch(branch);
+    this.serviceDetailsForm.get(&#x27;rankCategory&#x27;)!.setValue(&#x27;&#x27;);
+    this.filteredRanks &#x3D; [];
+  }
+
+  onRankCategorySelect(event: any) {
+    const category &#x3D; event.value;
+    const branch &#x3D; this.serviceDetailsForm.get(&#x27;branch&#x27;)!.value;
+    if (category &amp;&amp; branch) {
+      this.filteredRanks &#x3D; this.rankService.getRanks(branch, category);
+    }
+  }
+
+  moveToNextStep() {
+    if (this.serviceDetailsForm.valid) {
+      this.wizardState.moveToStep(1);
+    } else {
+      console.error(&#x27;Form is not valid&#x27;);
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;form [formGroup]&#x3D;&quot;serviceDetailsForm&quot; (ngSubmit)&#x3D;&quot;moveToNextStep()&quot;&gt;
+    &lt;div class&#x3D;&quot;step-header&quot;&gt;
+      &lt;h2&gt;General Service Details&lt;/h2&gt;
+      &lt;p&gt;Start with some basic information about your military service&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;form-content&quot;&gt;
+      &lt;!-- Years of Service --&gt;
+      &lt;mat-form-field appearance&#x3D;&quot;outline&quot; class&#x3D;&quot;tt-form-field&quot;&gt;
+        &lt;mat-label&gt;Years of Service&lt;/mat-label&gt;
+        &lt;input matInput formControlName&#x3D;&quot;yearsOfService&quot; /&gt;
+        &lt;mat-icon matSuffix&gt;event&lt;/mat-icon&gt;
+      &lt;/mat-form-field&gt;
+
+      &lt;!-- Branch --&gt;
+      &lt;mat-form-field appearance&#x3D;&quot;outline&quot; class&#x3D;&quot;tt-form-field&quot;&gt;
+        &lt;mat-label&gt;Branch&lt;/mat-label&gt;
+        &lt;mat-select
+          formControlName&#x3D;&quot;branch&quot;
+          (selectionChange)&#x3D;&quot;onBranchSelect($event)&quot;
+        &gt;
+          &lt;mat-option *ngFor&#x3D;&quot;let branch of branches&quot; [value]&#x3D;&quot;branch&quot;&gt;{{
+            branch
+          }}&lt;/mat-option&gt;
+        &lt;/mat-select&gt;
+      &lt;/mat-form-field&gt;
+
+      &lt;!-- Service Type --&gt;
+      &lt;mat-form-field
+        appearance&#x3D;&quot;outline&quot;
+        class&#x3D;&quot;tt-form-field&quot;
+        *ngIf&#x3D;&quot;serviceDetailsForm.get(&#x27;branch&#x27;)?.value&quot;
+      &gt;
+        &lt;mat-label&gt;Service Type&lt;/mat-label&gt;
+        &lt;mat-select formControlName&#x3D;&quot;serviceType&quot;&gt;
+          &lt;mat-option *ngFor&#x3D;&quot;let type of serviceTypes&quot; [value]&#x3D;&quot;type&quot;&gt;
+            {{ type }}
+          &lt;/mat-option&gt;
+        &lt;/mat-select&gt;
+      &lt;/mat-form-field&gt;
+
+      &lt;!-- Enlisted/Officer --&gt;
+      &lt;mat-form-field
+        appearance&#x3D;&quot;outline&quot;
+        class&#x3D;&quot;tt-form-field&quot;
+        *ngIf&#x3D;&quot;showRankCategory&quot;
+      &gt;
+        &lt;mat-label&gt;Enlisted or Officer&lt;/mat-label&gt;
+        &lt;mat-select
+          formControlName&#x3D;&quot;rankCategory&quot;
+          (selectionChange)&#x3D;&quot;onRankCategorySelect($event)&quot;
+        &gt;
+          &lt;mat-option
+            *ngFor&#x3D;&quot;let category of rankCategories&quot;
+            [value]&#x3D;&quot;category&quot;
+            &gt;{{ category }}&lt;/mat-option
+          &gt;
+        &lt;/mat-select&gt;
+      &lt;/mat-form-field&gt;
+
+      &lt;!-- Rank at Discharge --&gt;
+      &lt;mat-form-field
+        appearance&#x3D;&quot;outline&quot;
+        class&#x3D;&quot;tt-form-field&quot;
+        *ngIf&#x3D;&quot;filteredRanks.length &gt; 0&quot;
+      &gt;
+        &lt;mat-label&gt;Rank at Discharge&lt;/mat-label&gt;
+        &lt;mat-select formControlName&#x3D;&quot;dischargeRank&quot;&gt;
+          &lt;mat-option *ngFor&#x3D;&quot;let rank of filteredRanks&quot; [value]&#x3D;&quot;rank&quot;&gt;{{
+            rank
+          }}&lt;/mat-option&gt;
+        &lt;/mat-select&gt;
+      &lt;/mat-form-field&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;form-actions&quot;&gt;
+      &lt;button
+        type&#x3D;&quot;submit&quot;
+        mat-raised-button
+        color&#x3D;&quot;primary&quot;
+        class&#x3D;&quot;tt-next-btn&quot;
+        [disabled]&#x3D;&quot;!serviceDetailsForm.valid&quot;
+      &gt;
+        Next
+        &lt;mat-icon&gt;arrow_forward_ios&lt;/mat-icon&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./eligibility-step.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  font-family: &quot;Helvetica Neue&quot;, sans-serif;
+}
+
+.cdk-overlay-pane {
+  position: fixed !important;
+  right: 0 !important;
+  left: auto !important;
+}
+
+.step-header {
+  text-align: center;
+}
+
+.step-header h2 {
+  font-size: 2em;
+  margin-bottom: 0.25em;
+  color: #333;
+}
+
+.step-header p {
+  color: #666;
+  margin-bottom: 2em;
+}
+
+.form-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.mat-form-field .mat-form-field-wrapper {
+  padding: 0.5em;
+}
+
+.mat-form-field .mat-form-field-infix {
+  padding: 0.5em 0;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #3f51b5;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: #303f9f;
+}
+
+.mat-icon {
+  color: #3f51b5;
+}
+
+.form-actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0 0;
+}
+
+.tt-next-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
+  height: 50px;
+  font-size: 1em;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #3f51b5;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.tt-next-btn:hover {
+  background-color: #345db5;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.tt-next-btn:disabled {
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container">  <form [formGroup]="serviceDetailsForm" (ngSubmit)="moveToNextStep()">    <div class="step-header">      <h2>General Service Details</h2>      <p>Start with some basic information about your military service</p>    </div>    <div class="form-content">      <!-- Years of Service -->      <mat-form-field appearance="outline" class="tt-form-field">        <mat-label>Years of Service</mat-label>        <input matInput formControlName="yearsOfService" />        <mat-icon matSuffix>event</mat-icon>      </mat-form-field>      <!-- Branch -->      <mat-form-field appearance="outline" class="tt-form-field">        <mat-label>Branch</mat-label>        <mat-select          formControlName="branch"          (selectionChange)="onBranchSelect($event)"        >          <mat-option *ngFor="let branch of branches" [value]="branch">{{            branch          }}</mat-option>        </mat-select>      </mat-form-field>      <!-- Service Type -->      <mat-form-field        appearance="outline"        class="tt-form-field"        *ngIf="serviceDetailsForm.get(\'branch\')?.value"      >        <mat-label>Service Type</mat-label>        <mat-select formControlName="serviceType">          <mat-option *ngFor="let type of serviceTypes" [value]="type">            {{ type }}          </mat-option>        </mat-select>      </mat-form-field>      <!-- Enlisted/Officer -->      <mat-form-field        appearance="outline"        class="tt-form-field"        *ngIf="showRankCategory"      >        <mat-label>Enlisted or Officer</mat-label>        <mat-select          formControlName="rankCategory"          (selectionChange)="onRankCategorySelect($event)"        >          <mat-option            *ngFor="let category of rankCategories"            [value]="category"            >{{ category }}</mat-option          >        </mat-select>      </mat-form-field>      <!-- Rank at Discharge -->      <mat-form-field        appearance="outline"        class="tt-form-field"        *ngIf="filteredRanks.length > 0"      >        <mat-label>Rank at Discharge</mat-label>        <mat-select formControlName="dischargeRank">          <mat-option *ngFor="let rank of filteredRanks" [value]="rank">{{            rank          }}</mat-option>        </mat-select>      </mat-form-field>    </div>    <div class="form-actions">      <button        type="submit"        mat-raised-button        color="primary"        class="tt-next-btn"        [disabled]="!serviceDetailsForm.valid"      >        Next        <mat-icon>arrow_forward_ios</mat-icon>      </button>    </div>  </form></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EligibilityStepComponent', 'selector': 'app-eligibility-step'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'GuidedWizardComponent', 'selector': 'app-guided-wizard'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ResourcesComponent', 'selector': 'app-resources'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'EligibilityStepComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EligibilityStepComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

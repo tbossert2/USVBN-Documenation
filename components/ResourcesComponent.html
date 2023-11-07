@@ -1,0 +1,1076 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>veteransbenefits-client documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">veteransbenefits-client documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  ResourcesComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/resources/resources.component.ts</code>
+</p>
+
+
+
+
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-resources</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./resources.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./resources.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#filteredResources" >filteredResources</a>
+                            </li>
+                            <li>
+                                <a href="#resource" >resource</a>
+                            </li>
+                            <li>
+                                <a href="#resources" >resources</a>
+                            </li>
+                            <li>
+                                <a href="#searchInput" >searchInput</a>
+                            </li>
+                            <li>
+                                <a href="#selectedCategory" >selectedCategory</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#filterResources" >filterResources</a>
+                            </li>
+                            <li>
+                                <a href="#isCategorySelected" >isCategorySelected</a>
+                            </li>
+                            <li>
+                                <a href="#resetCategories" >resetCategories</a>
+                            </li>
+                            <li>
+                                <a href="#searchResources" >searchResources</a>
+                            </li>
+                            <li>
+                                <a href="#updateFilteredResources" >updateFilteredResources</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterResources"></a>
+                    <span class="name">
+                        <span ><b>filterResources</b></span>
+                        <a href="#filterResources"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filterResources()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="130"
+                                    class="link-to-prism">src/app/resources/resources.component.ts:130</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCategorySelected"></a>
+                    <span class="name">
+                        <span ><b>isCategorySelected</b></span>
+                        <a href="#isCategorySelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isCategorySelected(category: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="167"
+                                    class="link-to-prism">src/app/resources/resources.component.ts:167</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>category</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetCategories"></a>
+                    <span class="name">
+                        <span ><b>resetCategories</b></span>
+                        <a href="#resetCategories"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetCategories()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="149"
+                                    class="link-to-prism">src/app/resources/resources.component.ts:149</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchResources"></a>
+                    <span class="name">
+                        <span ><b>searchResources</b></span>
+                        <a href="#searchResources"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchResources()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="154"
+                                    class="link-to-prism">src/app/resources/resources.component.ts:154</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateFilteredResources"></a>
+                    <span class="name">
+                        <span ><b>updateFilteredResources</b></span>
+                        <a href="#updateFilteredResources"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateFilteredResources()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="145"
+                                    class="link-to-prism">src/app/resources/resources.component.ts:145</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filteredResources"></a>
+                    <span class="name">
+                        <span ><b>filteredResources</b></span>
+                        <a href="#filteredResources"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.resources</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/resources/resources.component.ts:126</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resource"></a>
+                    <span class="name">
+                        <span ><b>resource</b></span>
+                        <a href="#resource"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/resources/resources.component.ts:127</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resources"></a>
+                    <span class="name">
+                        <span ><b>resources</b></span>
+                        <a href="#resources"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;literal type&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    { title: &#x27;VA Regional Office (VERA) appointment scheduler&#x27;, category: &#x27;Appointment Scheduling&#x27;, 
+    description: &#x27;This site is for scheduling one-on-one appointments with a VA regional office.&#x27;, 
+    link: &#x27;https://va.my.site.com/VAVERA/s/&#x27; },
+    { title: &#x27;The Clinicians Guide&#x27;, category: &#x27;Health&#x27;, 
+    description: &#x27;This guide is designed to assist clinicians when performing compensation and pension (C&amp;P) examinations. Since C&amp;P examinations differ markedly from traditional medical examinations, special clinician guidance is required. This guide provides information for performing examinations that meet the requirements of the federal law.&#x27;, 
+    link: &#x27;https://nebula.wsimg.com/abfac4b8e09be3ac271b628f32919e7a?AccessKeyId&#x3D;1FBD76F67BF87C8DD859&amp;disposition&#x3D;0&amp;alloworigin&#x3D;1&#x27; },
+    { title: &#x27;State Veteran Benefit Finder&#x27;, category: &#x27;Misc.&#x27;, 
+    description: &#x27;This tool allows users to filter state-level veteran benefits by type of benefit, beneficiary, and state to identify benefits for which they may be eligible, providing a unique and invaluablereference. The accompanying report offers analysis of trends in state-level benefits and includes recommendations for an array of key stakeholders, from veterans to those who serve them across domains.&#x27;, 
+    link: &#x27;https://www.cnas.org/publications/reports/state-veteran-benefit-finder&#x27; },
+    { title: &#x27;Application for Burial Benefits&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;This page aims to assist surviving family and friends of a Veteran who has unfortunately passed away. By filling out this application, applicants can obtain benefits aimed to help cover burial, funeral, and transportation costs&#x27;, 
+    link: &#x27;https://www.va.gov/burials-and-memorials/application/530/introduction&#x27; },
+    { title: &#x27;VALife - Life Insurance&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;This page discusses life insurance premium rates, benefit eligiblity,  insurance benefits, beneficiary resources, applications and more regarding life insurance through VA Life. Please note, applicants who switch to VA Life from S-DVI can keep their S-DVI while waiting&#x27;, 
+    link: &#x27;https://www.va.gov/life-insurance/options-eligibility/valife/&#x27; },
+    { title: &#x27;Arlington National Cemetary Funeral Scheduling&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;This link will take you to the main funerals page for the Arlington National Cemetary, with links to determining eligiblity, associated costs, required documents, and other information needed to schedule a funeral service.&#x27;, 
+    link: &#x27;https://www.arlingtoncemetery.mil/Funerals/Scheduling-a-Funeral&#x27; },
+    { title: &#x27;Burial Flags&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;This page will provide users resources and information about obtaining a burial flag and eligiblity for obtaining this flag&#x27;, 
+    link: &#x27;https://www.arlingtoncemetery.mil/Funerals/Scheduling-a-Funeral&#x27; },
+    { title: &#x27;CEM - Burial Markers&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;Information about obtaining free headstones, markers, or medallions for the deceased. Includes eligiblity for said items&#x27;, 
+    link: &#x27;https://www.cem.va.gov/hmm/&#x27; },
+    { title: &#x27;Presidential Memorial Certificates (PMC)&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;Engraved paper signed by the current president to honor those who have served. Information regarding eligiblity, application, and certificate transportation.&#x27;, 
+    link: &#x27;https://www.va.gov/burials-memorials/memorial-items/presidential-memorial-certificates/&#x27; },
+    { title: &#x27;Benefits Delivery at Discharge (BDD)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;Information developed from r/VeteransBenefits relating to applying for Benefits at Discharge. Must be completed 90-180 days before separation.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/bdd/&#x27; },
+    { title: &#x27;Aggregated Service Connection&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;Information developed by r/VeteransBenefits relating to applying for Benefits at Discharge. Helps users to understand how to determine expected benefits from rating of pre-service (pre-existing) and post-service conditions based on aggravation.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/agg/&#x27; },
+    { title: &#x27;VA Disability Claim Types&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;Information developed from r/VeteransBenefits relating to different disability claim types. Types of claims include a Deferred Claim, Fully Developed Claim, Increase Claim, Inferred Claim, Original Claim, Secondary Claim, Standard Claim, Supplemental Claim, and 1151 Claim. There is not set time period you must wait for to file a claim increase.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/claimtype/&#x27; },
+    { title: &#x27;Buddy Letters Information&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. Buddy Letters can be used if an individual is missing evidence or context in their military records regarding possible disabilities that can be helpful for filing a claim.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/buddy/&#x27; },
+    { title: &#x27;Buddy Letter Form (VA Form 21-10210)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;A form that can be filled out by someone has witnessed a negative impact to your life caused by a disability in circumstances where your military records are missing evidence or context regarding this information. Helpful for filling disability claims&#x27;, 
+    link: &#x27;https://www.vba.va.gov/pubs/forms/VBA-21-10210-ARE.pdf&#x27; },
+    { title: &#x27;Intent to File Form (VA-Form 21-0966)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;A form for establishing your intent to file and effective date. Your effective date is critical because it is used to determine the date the Veteran gets paid from.&#x27;, 
+    link: &#x27;https://www.vba.va.gov/pubs/forms/vba-21-0966-are.pdf&#x27; },
+    { title: &#x27;Commonly Overlooked Disabilities&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;A list of disabilities you may be able to file a claim for that are frequently forgotten. Compiled by r/VeteransBenefits.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/commonly/&#x27; },
+    { title: &#x27;Compensation and Pension Examinations (C&amp;Ps)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. A step by step walkthrough for a C&amp;P examination including steps to be taken before, during, and after the examination.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/cnp/&#x27; },
+    { title: &#x27;Veterans Transportation Service Locations&#x27;, category: &#x27;Misc.&#x27;, 
+    description: &#x27;A state by state list of free transportation services available to veterans.&#x27;, 
+    link: &#x27;https://www.va.gov/HEALTHBENEFITS/vtp/map.asp&#x27; },
+    { title: &#x27;Congressional Inquiry&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. Do you feel like your claim is lost in VA purgatory? Or are having some other issue with the VA? If so, contacting your representative might help things along. This resource provides a breakdown on how to contact a representative to speed to get updated informationr regarding your claim(s).&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/congress/&#x27; },
+    { title: &#x27;Dealing With A Bad Examiner&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. A list of steps an individual can take in cases of an unfair examination. Includes the Memorandum for Record (MFR) Form (VA Form 21-4138).&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/badex/&#x27; },
+    { title: &#x27;Memorandum for Record (MFR) Form (VA Form 21-4138)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;A form that can be filled out after a Compensation and Pension Examination (C&amp;P) in which you felt you had an unfair or bad examiner.&#x27;, 
+    link: &#x27;https://www.vba.va.gov/pubs/forms/VBA-21-4138-ARE.pdf&#x27; },
+    { title: &#x27;Disability Benefit Questionnaire (DBQ) Information&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. Information regarding the Disability Benefit Questionnaire (DBQ). The DBQ is used to determine the severity of a Veteran\&#x27;s disability, but does not help determine if the disability is service-connected. A DBQ is not required for your disability claim or appeal to be successful. Please note that it is the position of r/VeteransBenefits that Veterans avoid going this route.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/dbq/&#x27; },
+    { title: &#x27;Effective Dates&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. Effective Dates determine when a Veteran\&#x27;s pay will start in cases of Disability Claims. This page includes information regarding these dates and how they are determined.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteranBenefits/wiki/edate/&#x27; },
+    { title: &#x27;Filing for Aid and Attendance/Housebound Information&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits.  Information regarding application of VA Form 21-2680. This includes information about determining eligibility and how housebound or inidividuals needing aid and attendance can apply.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/aah/&#x27; },
+    { title: &#x27;Filing for Aid and Attendance/Housebound Form (VA Form 21-2680)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;Form used to apply for individuals who are housebound are in need of aid and attendance so that they may get assistance in their daily living.&#x27;, 
+    link: &#x27;https://www.vba.va.gov/pubs/forms/VBA-21-2680-ARE.pdf&#x27; },
+    { title: &#x27;Filing a VA Disability Claim&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. A large collection and breakdown of information about filing a disability claim. VA disability is a monthly tax-free monetary benefit that ranges from over $100 to nearly $10,000 in the case of Special Monthly Compensation.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/vaclaim/&#x27; },
+    { title: &#x27;Independent Medical Opinion (IMO) / Nexus Letter&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. This page breaks down what an IMO is, how to obtain and IMO, and important information that should be included in an IMO.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/imo/&#x27; },
+    { title: &#x27;Master Condition List&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. An alphabetical list of all the conditions listed within the rating schedule as well as containing some common but not all Analogous and equivalent conditions. This list can be used to determine how certain conditions are rated from the perspective of disability claims.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/masterlist/&#x27; },
+    { title: &#x27;National Guard and Reservist Claims&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. This page contains a plethora of information aimed to help those who served in the National Guard or Reserves to recieve benefits despite the difficulty that can commonly be experienced when doing so. Much of this information relates to Line of Duty (LOD) which can help veterans established a service connection. &#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/ngr/&#x27; },
+    
+    
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/resources/resources.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchInput"></a>
+                    <span class="name">
+                        <span ><b>searchInput</b></span>
+                        <a href="#searchInput"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/resources/resources.component.ts:10</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedCategory"></a>
+                    <span class="name">
+                        <span ><b>selectedCategory</b></span>
+                        <a href="#selectedCategory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/resources/resources.component.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-resources&#x27;,
+  templateUrl: &#x27;./resources.component.html&#x27;,
+  styleUrls: [&#x27;./resources.component.scss&#x27;]
+})
+
+export class ResourcesComponent {
+  searchInput: string &#x3D; &#x27;&#x27;; // Property to hold the search input
+  selectedCategory: string &#x3D; &#x27;&#x27;;  //Property to hold the filter value for categories
+
+
+  //List of all resources put into array for each card. This array is loop through to update displayed cards
+  //Known issues: 
+  //1. Trying to break up the description into multiple lines to look better causes error
+  //2. Filter does not work on cards
+  resources: Array&lt;{ title: string, category: string, description: string, link: string }&gt; &#x3D; [
+    { title: &#x27;VA Regional Office (VERA) appointment scheduler&#x27;, category: &#x27;Appointment Scheduling&#x27;, 
+    description: &#x27;This site is for scheduling one-on-one appointments with a VA regional office.&#x27;, 
+    link: &#x27;https://va.my.site.com/VAVERA/s/&#x27; },
+    { title: &#x27;The Clinicians Guide&#x27;, category: &#x27;Health&#x27;, 
+    description: &#x27;This guide is designed to assist clinicians when performing compensation and pension (C&amp;P) examinations. Since C&amp;P examinations differ markedly from traditional medical examinations, special clinician guidance is required. This guide provides information for performing examinations that meet the requirements of the federal law.&#x27;, 
+    link: &#x27;https://nebula.wsimg.com/abfac4b8e09be3ac271b628f32919e7a?AccessKeyId&#x3D;1FBD76F67BF87C8DD859&amp;disposition&#x3D;0&amp;alloworigin&#x3D;1&#x27; },
+    { title: &#x27;State Veteran Benefit Finder&#x27;, category: &#x27;Misc.&#x27;, 
+    description: &#x27;This tool allows users to filter state-level veteran benefits by type of benefit, beneficiary, and state to identify benefits for which they may be eligible, providing a unique and invaluablereference. The accompanying report offers analysis of trends in state-level benefits and includes recommendations for an array of key stakeholders, from veterans to those who serve them across domains.&#x27;, 
+    link: &#x27;https://www.cnas.org/publications/reports/state-veteran-benefit-finder&#x27; },
+    { title: &#x27;Application for Burial Benefits&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;This page aims to assist surviving family and friends of a Veteran who has unfortunately passed away. By filling out this application, applicants can obtain benefits aimed to help cover burial, funeral, and transportation costs&#x27;, 
+    link: &#x27;https://www.va.gov/burials-and-memorials/application/530/introduction&#x27; },
+    { title: &#x27;VALife - Life Insurance&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;This page discusses life insurance premium rates, benefit eligiblity,  insurance benefits, beneficiary resources, applications and more regarding life insurance through VA Life. Please note, applicants who switch to VA Life from S-DVI can keep their S-DVI while waiting&#x27;, 
+    link: &#x27;https://www.va.gov/life-insurance/options-eligibility/valife/&#x27; },
+    { title: &#x27;Arlington National Cemetary Funeral Scheduling&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;This link will take you to the main funerals page for the Arlington National Cemetary, with links to determining eligiblity, associated costs, required documents, and other information needed to schedule a funeral service.&#x27;, 
+    link: &#x27;https://www.arlingtoncemetery.mil/Funerals/Scheduling-a-Funeral&#x27; },
+    { title: &#x27;Burial Flags&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;This page will provide users resources and information about obtaining a burial flag and eligiblity for obtaining this flag&#x27;, 
+    link: &#x27;https://www.arlingtoncemetery.mil/Funerals/Scheduling-a-Funeral&#x27; },
+    { title: &#x27;CEM - Burial Markers&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;Information about obtaining free headstones, markers, or medallions for the deceased. Includes eligiblity for said items&#x27;, 
+    link: &#x27;https://www.cem.va.gov/hmm/&#x27; },
+    { title: &#x27;Presidential Memorial Certificates (PMC)&#x27;, category: &#x27;Death Benefits&#x27;, 
+    description: &#x27;Engraved paper signed by the current president to honor those who have served. Information regarding eligiblity, application, and certificate transportation.&#x27;, 
+    link: &#x27;https://www.va.gov/burials-memorials/memorial-items/presidential-memorial-certificates/&#x27; },
+    { title: &#x27;Benefits Delivery at Discharge (BDD)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;Information developed from r/VeteransBenefits relating to applying for Benefits at Discharge. Must be completed 90-180 days before separation.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/bdd/&#x27; },
+    { title: &#x27;Aggregated Service Connection&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;Information developed by r/VeteransBenefits relating to applying for Benefits at Discharge. Helps users to understand how to determine expected benefits from rating of pre-service (pre-existing) and post-service conditions based on aggravation.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/agg/&#x27; },
+    { title: &#x27;VA Disability Claim Types&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;Information developed from r/VeteransBenefits relating to different disability claim types. Types of claims include a Deferred Claim, Fully Developed Claim, Increase Claim, Inferred Claim, Original Claim, Secondary Claim, Standard Claim, Supplemental Claim, and 1151 Claim. There is not set time period you must wait for to file a claim increase.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/claimtype/&#x27; },
+    { title: &#x27;Buddy Letters Information&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. Buddy Letters can be used if an individual is missing evidence or context in their military records regarding possible disabilities that can be helpful for filing a claim.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/buddy/&#x27; },
+    { title: &#x27;Buddy Letter Form (VA Form 21-10210)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;A form that can be filled out by someone has witnessed a negative impact to your life caused by a disability in circumstances where your military records are missing evidence or context regarding this information. Helpful for filling disability claims&#x27;, 
+    link: &#x27;https://www.vba.va.gov/pubs/forms/VBA-21-10210-ARE.pdf&#x27; },
+    { title: &#x27;Intent to File Form (VA-Form 21-0966)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;A form for establishing your intent to file and effective date. Your effective date is critical because it is used to determine the date the Veteran gets paid from.&#x27;, 
+    link: &#x27;https://www.vba.va.gov/pubs/forms/vba-21-0966-are.pdf&#x27; },
+    { title: &#x27;Commonly Overlooked Disabilities&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;A list of disabilities you may be able to file a claim for that are frequently forgotten. Compiled by r/VeteransBenefits.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/commonly/&#x27; },
+    { title: &#x27;Compensation and Pension Examinations (C&amp;Ps)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. A step by step walkthrough for a C&amp;P examination including steps to be taken before, during, and after the examination.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/cnp/&#x27; },
+    { title: &#x27;Veterans Transportation Service Locations&#x27;, category: &#x27;Misc.&#x27;, 
+    description: &#x27;A state by state list of free transportation services available to veterans.&#x27;, 
+    link: &#x27;https://www.va.gov/HEALTHBENEFITS/vtp/map.asp&#x27; },
+    { title: &#x27;Congressional Inquiry&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. Do you feel like your claim is lost in VA purgatory? Or are having some other issue with the VA? If so, contacting your representative might help things along. This resource provides a breakdown on how to contact a representative to speed to get updated informationr regarding your claim(s).&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/congress/&#x27; },
+    { title: &#x27;Dealing With A Bad Examiner&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. A list of steps an individual can take in cases of an unfair examination. Includes the Memorandum for Record (MFR) Form (VA Form 21-4138).&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/badex/&#x27; },
+    { title: &#x27;Memorandum for Record (MFR) Form (VA Form 21-4138)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;A form that can be filled out after a Compensation and Pension Examination (C&amp;P) in which you felt you had an unfair or bad examiner.&#x27;, 
+    link: &#x27;https://www.vba.va.gov/pubs/forms/VBA-21-4138-ARE.pdf&#x27; },
+    { title: &#x27;Disability Benefit Questionnaire (DBQ) Information&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. Information regarding the Disability Benefit Questionnaire (DBQ). The DBQ is used to determine the severity of a Veteran\&#x27;s disability, but does not help determine if the disability is service-connected. A DBQ is not required for your disability claim or appeal to be successful. Please note that it is the position of r/VeteransBenefits that Veterans avoid going this route.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/dbq/&#x27; },
+    { title: &#x27;Effective Dates&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. Effective Dates determine when a Veteran\&#x27;s pay will start in cases of Disability Claims. This page includes information regarding these dates and how they are determined.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteranBenefits/wiki/edate/&#x27; },
+    { title: &#x27;Filing for Aid and Attendance/Housebound Information&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits.  Information regarding application of VA Form 21-2680. This includes information about determining eligibility and how housebound or inidividuals needing aid and attendance can apply.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/aah/&#x27; },
+    { title: &#x27;Filing for Aid and Attendance/Housebound Form (VA Form 21-2680)&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;Form used to apply for individuals who are housebound are in need of aid and attendance so that they may get assistance in their daily living.&#x27;, 
+    link: &#x27;https://www.vba.va.gov/pubs/forms/VBA-21-2680-ARE.pdf&#x27; },
+    { title: &#x27;Filing a VA Disability Claim&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. A large collection and breakdown of information about filing a disability claim. VA disability is a monthly tax-free monetary benefit that ranges from over $100 to nearly $10,000 in the case of Special Monthly Compensation.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/vaclaim/&#x27; },
+    { title: &#x27;Independent Medical Opinion (IMO) / Nexus Letter&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. This page breaks down what an IMO is, how to obtain and IMO, and important information that should be included in an IMO.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/imo/&#x27; },
+    { title: &#x27;Master Condition List&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. An alphabetical list of all the conditions listed within the rating schedule as well as containing some common but not all Analogous and equivalent conditions. This list can be used to determine how certain conditions are rated from the perspective of disability claims.&#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/masterlist/&#x27; },
+    { title: &#x27;National Guard and Reservist Claims&#x27;, category: &#x27;Disability Compensation&#x27;, 
+    description: &#x27;From r/VeteransBenefits. This page contains a plethora of information aimed to help those who served in the National Guard or Reserves to recieve benefits despite the difficulty that can commonly be experienced when doing so. Much of this information relates to Line of Duty (LOD) which can help veterans established a service connection. &#x27;, 
+    link: &#x27;https://www.reddit.com/r/VeteransBenefits/wiki/ngr/&#x27; },
+    
+    
+  ];
+  
+  // resourceItems: Array&lt;{ title: string, category: string, description: string, link: string }&gt; &#x3D; [
+  //   { title: &#x27;VA Regional Office (VERA) appointment scheduler&#x27;, category: &#x27;Appointment Scueduling&#x27;, 
+  //   description: &#x27;This site is for scheduling one-on-one appointments with a VA regional office.&#x27;, 
+  //   link: &#x27;https://va.my.site.com/VAVERA/s/&#x27; },
+  //   { title: &#x27;VA Regional Office (VERA) appointment scheduler&#x27;, category: &#x27;Appointment Scueduling&#x27;, 
+  //   description: &#x27;This site is for scheduling one-on-one appointments with a VA regional office.&#x27;, 
+  //   link: &#x27;https://va.my.site.com/VAVERA/s/&#x27; },
+  //   { title: &#x27;VA Regional Office (VERA) appointment scheduler&#x27;, category: &#x27;Appointment Scueduling&#x27;, 
+  //   description: &#x27;This site is for scheduling one-on-one appointments with a VA regional office.&#x27;, 
+  //   link: &#x27;https://va.my.site.com/VAVERA/s/&#x27; },
+  //   { title: &#x27;VA Regional Office (VERA) appointment scheduler&#x27;, category: &#x27;Appointment Scueduling&#x27;, 
+  //   description: &#x27;This site is for scheduling one-on-one appointments with a VA regional office.&#x27;, 
+  //   link: &#x27;https://va.my.site.com/VAVERA/s/&#x27; },
+  //   // Add more resource items with the required properties
+  // ];
+
+  filteredResources: any[] &#x3D; this.resources;
+  resource: any; // Declare the resource property
+
+
+  filterResources() {
+    return this.resources.filter(resource &#x3D;&gt; {
+      // Check if the resource&#x27;s category is selected or no category is selected
+      const isCategoryMatch &#x3D; this.selectedCategory.length &#x3D;&#x3D;&#x3D; 0 || this.selectedCategory.includes(resource.category);
+      
+      // Check if the search input is empty or if the title or description contains the search input
+      const isSearchMatch &#x3D; this.searchInput &#x3D;&#x3D;&#x3D; &#x27;&#x27; ||
+        resource.title.toLowerCase().includes(this.searchInput.toLowerCase()) ||
+        resource.description.toLowerCase().includes(this.searchInput.toLowerCase());
+
+      // Return true if both category and search match, otherwise false
+      return isCategoryMatch &amp;&amp; isSearchMatch;
+    });
+  }
+
+  updateFilteredResources() {
+    this.filteredResources &#x3D; this.filterResources();
+  }
+
+  resetCategories() {
+    this.selectedCategory &#x3D; &#x27;&#x27;;
+    this.updateFilteredResources();
+  }
+
+  searchResources() {
+    console.log(this.searchInput.toLowerCase());
+    const searchTerm &#x3D; this.searchInput.toLowerCase();
+
+    // Filter the resource items based on the search input
+    const searchResults &#x3D; this.resources.filter(resource &#x3D;&gt;
+      resource.title.toLowerCase().includes(searchTerm) ||
+      resource.description.toLowerCase().includes(searchTerm)
+    );
+    this.filteredResources &#x3D; searchResults;
+    this.updateFilteredResources();
+  }
+
+  isCategorySelected(category: string) {
+    return this.selectedCategory.includes(category) || this.selectedCategory.length &#x3D;&#x3D;&#x3D; 0;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang&#x3D;&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset&#x3D;&quot;UTF-8&quot; /&gt;
+    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot; /&gt;
+    &lt;title&gt;Resources Page&lt;/title&gt;
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link
+      href&#x3D;&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
+      rel&#x3D;&quot;stylesheet&quot;
+    /&gt;
+    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;resources.component.scss&quot; /&gt;
+    &lt;script src&#x3D;&quot;resources.component.ts&quot; defer&gt;&lt;/script&gt;
+    &lt;!-- Placeholder. No script is used on this page.--&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Full width Navigation Bar --&gt;
+    &lt;!-- Must use full-width-navbar css class so the resource containers don&#x27;t cover the right half of the navbar --&gt;
+    &lt;nav class&#x3D;&quot;full-width-navbar&quot;&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;/home&#x27;]&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;/faq&#x27;]&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;/resources&#x27;]&quot;&gt;Resources&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href&#x3D;&quot;questionnaire.html&quot;&gt;Questionnaire&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href&#x3D;&quot;progress.html&quot;&gt;Progress&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    
+
+
+
+    &lt;!-- Resources Section --&gt;
+    &lt;div class&#x3D;&quot;container mt-5&quot;&gt;
+      &lt;!-- mt-5 is a bootstrap class. m stands for margin, t refers to top (the top margin) 5 represents the size of the margin (out of a 0-5 scale with bootstrap) --&gt;
+      &lt;h2 class&#x3D;&quot;mb-4&quot;&gt;Our Resources&lt;/h2&gt;
+      &lt;!-- mb-4 is a bootstrap class. m stands for margin, b refers to bottom (the bottom margin) 4 represents the size of the margin (out of a 0-5 scale with bootstrap)--&gt;
+
+      &lt;div style&#x3D;&quot;text-align: middle; margin-bottom: 20px;&quot;&gt;
+        &lt;input type&#x3D;&quot;text&quot; [(ngModel)]&#x3D;&quot;searchInput&quot; (input)&#x3D;&quot;searchResources()&quot; placeholder &#x3D; &quot;Search...&quot; style&#x3D;&quot;padding: 10px; width: 500px; border: 3px solid #ccc; border-radius: 100px;&quot;&gt;
+      &lt;/div&gt;
+      
+      &lt;!-- Filter Box Section --&gt;
+      &lt;div class&#x3D;&quot;filter-box&quot;&gt;
+        &lt;h3&gt;Filter by Category:&lt;/h3&gt;
+        &lt;label&gt;
+          &lt;input type&#x3D;&quot;radio&quot; [(ngModel)]&#x3D;&quot;selectedCategory&quot; [value]&#x3D;&quot;&#x27;Appointment Scueduling&#x27;&quot; /&gt;
+          Appointment Scueduling
+        &lt;/label&gt;
+        &lt;label&gt;
+          &lt;input type&#x3D;&quot;radio&quot; [(ngModel)]&#x3D;&quot;selectedCategory&quot; [value]&#x3D;&quot;&#x27;Health&#x27;&quot; /&gt;
+          Health
+        &lt;/label&gt;
+        &lt;label&gt;
+          &lt;input type&#x3D;&quot;radio&quot; [(ngModel)]&#x3D;&quot;selectedCategory&quot; [value]&#x3D;&quot;&#x27;Misc.&#x27;&quot; /&gt;
+          Miscellaneous
+        &lt;/label&gt;
+        &lt;label&gt;
+          &lt;input type&#x3D;&quot;radio&quot; [(ngModel)]&#x3D;&quot;selectedCategory&quot; [value]&#x3D;&quot;&#x27;Death Benefits&#x27;&quot; /&gt;
+          Death Benefits
+        &lt;/label&gt;
+        &lt;label&gt;
+          &lt;input type&#x3D;&quot;radio&quot; [(ngModel)]&#x3D;&quot;selectedCategory&quot; [value]&#x3D;&quot;&#x27;Disability Compensation&#x27;&quot; /&gt;
+          Disability Compensation
+        &lt;/label&gt;
+        &lt;button (click)&#x3D;&quot;resetCategories()&quot;&gt;Reset&lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;!-- Resource 1 --&gt;
+        &lt;div class&#x3D;&quot;col-md-4 mb-4&quot; *ngFor&#x3D;&quot;let resource of filteredResources&quot;&gt;
+          &lt;!-- col-md-4 is a bootstrap class. col sets the class into columns. md chooses medium display page. 4 chooses to use 4/12 columns provided by bootstrap resulting in 3 resources displayed side by side before moving to the next row. --&gt;
+          &lt;div class&#x3D;&quot;card&quot; *ngIf&#x3D;&quot;isCategorySelected(resource.category)&quot;&gt;
+            &lt;!-- card is a bootstrap class that acts as a flexble container --&gt;
+            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+              &lt;h5 class&#x3D;&quot;card-title&quot;&gt;
+                {{ resource.title }}
+              &lt;/h5&gt;
+              &lt;p class&#x3D;&quot;category&quot;&gt;
+                &lt;span class&#x3D;&quot;category-text&quot;&gt;{{ resource.category }}&lt;/span&gt;
+              &lt;/p&gt;
+              &lt;p class&#x3D;&quot;card-text&quot;&gt;
+                {{ resource.description }}
+              &lt;/p&gt;
+              &lt;a href&#x3D; &quot;{{ resource.link }}&quot; class&#x3D;&quot;btn btn-primary&quot;
+                &gt;Read More&lt;/a
+              &gt;
+              &lt;!-- btn is a bootstrap class for buttons. btn-primary adds in style (solid background, white text, 3D shadow)--&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Footer Section --&gt;
+    &lt;footer class&#x3D;&quot;footer mt-auto py-3 bg-light&quot;&gt;
+      &lt;!-- mt-auto is a bootstrap class for an auto sized top margin. py-3 is padding, on the y-axis, with a size of 3. bg-light is a ligt gray background color--&gt;
+      &lt;div class&#x3D;&quot;container text-center&quot;&gt;
+        &lt;span class&#x3D;&quot;text-muted&quot;
+          &gt;For more help please visit the r/VeteransBenefits subreddit&lt;/span
+        &gt;
+        &lt;br /&gt;
+        &lt;a href&#x3D;&quot;https://www.reddit.com/r/VeteransBenefits/&quot;
+          &gt;Visit our page on Reddit&lt;/a
+        &gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;!-- Bootstrap JS --&gt;
+    &lt;script src&#x3D;&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src&#x3D;&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./resources.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.category {
+    .category-text {
+      font-size: 16px; 
+      text-decoration: underline; 
+      margin-top: 0px; 
+    }
+  }
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!DOCTYPE html><html lang="en">  <head>    <meta charset="UTF-8" />    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <title>Resources Page</title>    <!-- Bootstrap CSS -->    <link      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"      rel="stylesheet"    />    <link rel="stylesheet" href="resources.component.scss" />    <script src="resources.component.ts" defer></script>    <!-- Placeholder. No script is used on this page.-->  </head>  <body>    <!-- Full width Navigation Bar -->    <!-- Must use full-width-navbar css class so the resource containers don\'t cover the right half of the navbar -->    <nav class="full-width-navbar">      <ul>        <li><a [routerLink]="[\'/home\']">Home</a></li>        <li><a [routerLink]="[\'/faq\']">FAQ</a></li>        <li><a [routerLink]="[\'/resources\']">Resources</a></li>        <li><a href="questionnaire.html">Questionnaire</a></li>        <li><a href="progress.html">Progress</a></li>      </ul>    </nav>        <!-- Resources Section -->    <div class="container mt-5">      <!-- mt-5 is a bootstrap class. m stands for margin, t refers to top (the top margin) 5 represents the size of the margin (out of a 0-5 scale with bootstrap) -->      <h2 class="mb-4">Our Resources</h2>      <!-- mb-4 is a bootstrap class. m stands for margin, b refers to bottom (the bottom margin) 4 represents the size of the margin (out of a 0-5 scale with bootstrap)-->      <div style="text-align: middle; margin-bottom: 20px;">        <input type="text" [(ngModel)]="searchInput" (input)="searchResources()" placeholder = "Search..." style="padding: 10px; width: 500px; border: 3px solid #ccc; border-radius: 100px;">      </div>            <!-- Filter Box Section -->      <div class="filter-box">        <h3>Filter by Category:</h3>        <label>          <input type="radio" [(ngModel)]="selectedCategory" [value]="\'Appointment Scueduling\'" />          Appointment Scueduling        </label>        <label>          <input type="radio" [(ngModel)]="selectedCategory" [value]="\'Health\'" />          Health        </label>        <label>          <input type="radio" [(ngModel)]="selectedCategory" [value]="\'Misc.\'" />          Miscellaneous        </label>        <label>          <input type="radio" [(ngModel)]="selectedCategory" [value]="\'Death Benefits\'" />          Death Benefits        </label>        <label>          <input type="radio" [(ngModel)]="selectedCategory" [value]="\'Disability Compensation\'" />          Disability Compensation        </label>        <button (click)="resetCategories()">Reset</button>      </div>      <div class="row">        <!-- Resource 1 -->        <div class="col-md-4 mb-4" *ngFor="let resource of filteredResources">          <!-- col-md-4 is a bootstrap class. col sets the class into columns. md chooses medium display page. 4 chooses to use 4/12 columns provided by bootstrap resulting in 3 resources displayed side by side before moving to the next row. -->          <div class="card" *ngIf="isCategorySelected(resource.category)">            <!-- card is a bootstrap class that acts as a flexble container -->            <div class="card-body">              <h5 class="card-title">                {{ resource.title }}              </h5>              <p class="category">                <span class="category-text">{{ resource.category }}</span>              </p>              <p class="card-text">                {{ resource.description }}              </p>              <a href= "{{ resource.link }}" class="btn btn-primary"                >Read More</a              >              <!-- btn is a bootstrap class for buttons. btn-primary adds in style (solid background, white text, 3D shadow)-->            </div>          </div>        </div>      </div>    </div>    <!-- Footer Section -->    <footer class="footer mt-auto py-3 bg-light">      <!-- mt-auto is a bootstrap class for an auto sized top margin. py-3 is padding, on the y-axis, with a size of 3. bg-light is a ligt gray background color-->      <div class="container text-center">        <span class="text-muted"          >For more help please visit the r/VeteransBenefits subreddit</span        >        <br />        <a href="https://www.reddit.com/r/VeteransBenefits/"          >Visit our page on Reddit</a        >      </div>    </footer>    <!-- Bootstrap JS -->    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  </body></html></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EligibilityStepComponent', 'selector': 'app-eligibility-step'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'GuidedWizardComponent', 'selector': 'app-guided-wizard'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ResourcesComponent', 'selector': 'app-resources'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ResourcesComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ResourcesComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
